@@ -1,5 +1,14 @@
 .open dreamhome.sqlite
-.mode column
+.mode box
 
-SELECT * 
-FROM branch;
+-- SELECT staffno, fname, lname, salary 
+-- FROM staff;
+
+-- 6.6
+-- SELECT *
+-- FROM branch
+-- WHERE city = 'London' OR city = 'Glasgow';
+
+SELECT *
+FROM branch
+WHERE city = 'London' AND postcode IS LIKE 'SW%';
